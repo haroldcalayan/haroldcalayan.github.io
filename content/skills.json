@@ -1,0 +1,37 @@
+{
+    "heading": "Core Expertise",
+    "subheading": "Specializing in high-performance Android development with a focus on scalability, maintainability, and exceptional user experience.",
+    "pillars": [
+        {
+            "icon": "fas fa-layer-group",
+            "iconColor": "primary-600",
+            "title": "Architecture & Scalability",
+            "description": "Building robust foundations using Clean Architecture, MVVM, and MVI patterns to ensure long-term maintainability and testability."
+        },
+        {
+            "icon": "fas fa-paint-brush",
+            "iconColor": "info",
+            "title": "Modern UI/UX",
+            "description": "Crafting fluid, accessible, and modern interfaces with Jetpack Compose, ensuring a premium feel across all device sizes."
+        },
+        {
+            "icon": "fas fa-bolt",
+            "iconColor": "success",
+            "title": "Performance & Optimization",
+            "description": "Ensuring lightning-fast load times and smooth interactions through Coroutines, Flows, and efficient data handling."
+        }
+    ],
+    "techStack": {
+        "label": "Advanced Tech Stack",
+        "technologies": [
+            "Kotlin",
+            "Jetpack Compose",
+            "Coroutines & Flows",
+            "Hilt / Dagger",
+            "Retrofit / OkHttp",
+            "Room Database",
+            "Unit & UI Testing",
+            "CI/CD Pipelines"
+        ]
+    }
+}

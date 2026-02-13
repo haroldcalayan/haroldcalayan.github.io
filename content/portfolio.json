@@ -1,0 +1,136 @@
+{
+    "heading": "Portfolio",
+    "subheading": "Selected Projects & Professional Experience",
+    "projects": [
+        {
+            "id": "mypal",
+            "title": "myPAL - Philippine Airlines",
+            "category": "Travel & Aviation",
+            "description": "The flagship mobile application for Philippine Airlines, transforming the digital travel experience for global passengers. Features seamless flight booking, real-time check-in with digital boarding passes, comprehensive flight status tracking, and deep integration with the Mabuhay Miles loyalty program. Engineered for scalability and high availability.",
+            "techStack": "Kotlin, Jetpack Compose, Clean Architecture, Coroutines, Retrofit, Room, Biometric Auth",
+            "cardImage": "assets/img/portfolio/mypalCard.png",
+            "hoverImage": "assets/img/portfolio/mypalHoverCard.png",
+            "bgColor": "#1a1a1a"
+        },
+        {
+            "id": "paymaya",
+            "title": "Maya (Paymaya) SDK",
+            "category": "Fintech & SDK",
+            "description": "A secure, modular Payment SDK enabling third-party merchants to accept in-app payments seamlessly. Supports credit/debit cards, PayMaya wallet, and QR payments. Features a customizable UI kit, bank-grade encryption, and strict PCI-DSS compliance, empowering hundreds of partner apps to monetize effectively.",
+            "techStack": "Kotlin, Payment Security, PCI-DSS, Encryption, SDK Design, API Integration",
+            "cardImage": "assets/img/portfolio/payMayaCard.png",
+            "hoverImage": "assets/img/portfolio/paymayaHoverCard.png",
+            "bgColor": "#0d1117"
+        },
+        {
+            "id": "smartnet",
+            "title": "Smartnet",
+            "category": "Free Internet",
+            "description": "An innovative 'Free Internet' platform providing zero-rated access to social media and essential services. Utilized advanced VPN tunneling and background data management to safeguard users from unwanted charges. Featured a proprietary 'Net.Safe' technology, ensuring a worry-free online experience for prepaid subscribers.",
+            "techStack": "Android, VPNService, Traffic Management, Socket.IO, Background Services",
+            "cardImage": "assets/img/portfolio/smartnetCard.png",
+            "hoverImage": "assets/img/portfolio/smartnetHoverCard.png",
+            "bgColor": "#0f172a"
+        },
+        {
+            "id": "freenet",
+            "title": "Freenet",
+            "category": "Partner Access",
+            "description": "A gamified free internet platform that rewards users with points and data packages for completing missions. Provided rewards-based access to top apps including Facebook and Twitter. Implemented sophisticated partner API integrations and data-saving mechanisms to bridge the digital divide.",
+            "techStack": "Android, Gamification, Rewards Engine, VPN, RESTful APIs, Analytics",
+            "cardImage": "assets/img/portfolio/freenetCard.png",
+            "hoverImage": "assets/img/portfolio/freenetHoverCard.png",
+            "bgColor": "#111827"
+        },
+        {
+            "id": "chikka",
+            "title": "Chikka",
+            "category": "Messaging",
+            "description": "The pioneering cross-platform messenger that successfully bridged web and SMS. Allowed users to send free text messages to any mobile number from the app. Features included real-time group chat, message synchronization across devices, and an optimized protocol for handling communications in low-bandwidth network conditions.",
+            "techStack": "Android, XMPP, WebSockets, Real-time Sync, SQLite, Push Notifications",
+            "cardImage": "assets/img/portfolio/chikkaCard.png",
+            "hoverImage": "assets/img/portfolio/chikkaHoverCard.png",
+            "bgColor": "#1e1b4b"
+        },
+        {
+            "id": "bge",
+            "title": "BGE by Exelon",
+            "category": "Energy & Utilities",
+            "description": "Free mobile self-service hub for BGE (Exelon) customers to manage energy accounts, pay bills, track usage, report outages, and view restoration maps. Features AutoPay management, PeakRewards device control, and customizable alerts for seamless energy management on the go.",
+            "techStack": "Android, Account Management, Payment Integration, Real-time Maps, Push Notifications",
+            "cardImage": "assets/img/portfolio/bgeCard.png",
+            "hoverImage": "assets/img/portfolio/bgeHoverCard.png",
+            "bgColor": "#1a2332"
+        },
+        {
+            "id": "comed",
+            "title": "ComEd by Exelon",
+            "category": "Energy & Utilities",
+            "description": "Free utility management app for ComEd (Exelon) customers in Northern Illinois. Manage accounts, pay bills, report and track outages with real-time maps, and monitor hourly energy usage. Features biometric sign-in, Budget Billing settings, bill forecasts, and customizable usage alerts for convenient on-the-go access.",
+            "techStack": "Android, Biometric Authentication, Real-time Data, Payment Integration, Usage Analytics",
+            "cardImage": "assets/img/portfolio/comedCard.png",
+            "hoverImage": "assets/img/portfolio/comedHoverCard.png",
+            "bgColor": "#2a1a32"
+        },
+        {
+            "id": "peco",
+            "title": "PECO by Exelon",
+            "category": "Energy & Utilities",
+            "description": "Free secure mobile hub for PECO (Exelon) electric and natural gas customers. Manage accounts, pay bills, report and track outages with real-time maps, and monitor energy consumption. Features biometric sign-in, AutoPay and Budget Billing settings, multi-account management, and Apple Watch compatibility for seamless utility service access.",
+            "techStack": "Android, iOS, Biometric Security, Apple Watch, Real-time Maps, Multi-Account Support",
+            "cardImage": "assets/img/portfolio/pecoCard.png",
+            "hoverImage": "assets/img/portfolio/pecoHoverCard.png",
+            "bgColor": "#1a3232"
+        },
+        {
+            "id": "mystc",
+            "title": "mystc",
+            "category": "Telecom & Services",
+            "description": "Comprehensive telecom super-app for stc customers in Saudi Arabia. Manage all services, order new numbers with delivery, shop smart devices and vouchers, transfer numbers from other operators, pay bills, recharge prepaid, manage packages, subscribe to entertainment services, and get 24/7 instant support. Features number auctions, device exchange, gifting, roaming packages, and carrier billing integration.",
+            "techStack": "Android, E-commerce, Payment Gateway, Live Chat, Carrier Billing, Multi-Service Platform",
+            "cardImage": "assets/img/portfolio/stcCard.png",
+            "hoverImage": "assets/img/portfolio/stcHoverCard.png",
+            "bgColor": "#1a1a2e"
+        },
+        {
+            "id": "overstock",
+            "title": "Overstock",
+            "category": "E-commerce & Retail",
+            "description": "Home furnishings and lifestyle e-commerce app offering furniture, décor, jewelry, mattresses, bedding, and designer goods at discounted prices. Features easy browsing of thousands of products, exclusive app-only discounts, first-to-know notifications, quick secure checkout, and seamless cart synchronization between site and app for effortless shopping.",
+            "techStack": "Android, E-commerce, Push Notifications, Secure Payments, Cart Sync",
+            "cardImage": "assets/img/portfolio/overstockCard.png",
+            "hoverImage": "assets/img/portfolio/overstockHoverCard.png",
+            "bgColor": "#2e1a1a"
+        },
+        {
+            "id": "mula",
+            "title": "Mula Mobile",
+            "category": "Business & Commerce",
+            "description": "Free mobile business management app for selling digital goods like airtime and electricity. Functions as a complete till system with inventory management, stock ordering, sales tracking, and profit monitoring. Supports additional payment services including DStv channels. Designed to help businesses and individuals grow through effective mobile commerce.",
+            "techStack": "Android, POS System, Inventory Management, Payment Integration, Sales Analytics",
+            "cardImage": "assets/img/portfolio/mulaCard.png",
+            "hoverImage": "assets/img/portfolio/mulaHoverCard.png",
+            "bgColor": "#1a2e1a"
+        },
+        {
+            "id": "bedbath",
+            "title": "Bed Bath & Beyond",
+            "category": "Home & Retail",
+            "description": "Streamlined home goods shopping app for furniture and decor. Features app-exclusive deals and discounts, wish list bookmarking with social sharing, instant price drop alerts, centralized coupon storage, quick checkout with saved credentials, and comprehensive order tracking. Shop thousands of products for every room, every home, and every budget.",
+            "techStack": "Android, E-commerce, Price Alerts, Wish Lists, Order Tracking, Coupon Management",
+            "cardImage": "assets/img/portfolio/BBBCard.png",
+            "hoverImage": "assets/img/portfolio/BBBHoverCard.png",
+            "bgColor": "#1a2a32"
+        },
+        {
+            "id": "TEST",
+            "title": "TEST",
+            "category": "TEST",
+            "description": "TEST",
+            "techStack": "TEST",
+            "cardImage": "assets/img/portfolio/cake.png",
+            "hoverImage": "assets/img/portfolio/cake.png",
+            "bgColor": "#1a2a32"
+        }
+    ]
+}

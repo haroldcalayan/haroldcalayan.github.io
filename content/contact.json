@@ -1,0 +1,60 @@
+{
+    "heading": {
+        "main": "Let's Build Something ",
+        "highlight": "Exceptional"
+    },
+    "description": "Ready to scale your mobile presence or need a technical partner for your next project? I'm currently accepting new inquiries.",
+    "calendarLink": "https://calendar.app.google/GRjCtfo7b9g1dRdc7",
+    "formspreeId": "mnjbpgpw",
+    "socialLinks": [
+        {
+            "platform": "GitHub",
+            "icon": "fab fa-github",
+            "url": "https://github.com/haroldcalayan"
+        },
+        {
+            "platform": "LinkedIn",
+            "icon": "fab fa-linkedin",
+            "url": "https://www.linkedin.com/in/haroldcalayan/"
+        },
+        {
+            "platform": "Facebook",
+            "icon": "fab fa-facebook",
+            "url": "https://www.facebook.com/haroldcalayan"
+        }
+    ],
+    "formFields": [
+        {
+            "id": "name",
+            "label": "Full Name",
+            "type": "text",
+            "placeholder": "John Doe",
+            "required": true
+        },
+        {
+            "id": "email",
+            "label": "Email Address",
+            "type": "email",
+            "placeholder": "john@example.com",
+            "required": true
+        },
+        {
+            "id": "message",
+            "label": "Project Details",
+            "type": "textarea",
+            "placeholder": "Tell me about your project...",
+            "rows": 4,
+            "required": true
+        }
+    ],
+    "messages": {
+        "success": {
+            "title": "Message sent successfully!",
+            "description": "I'll get back to you as soon as possible."
+        },
+        "error": {
+            "title": "Error sending message!",
+            "description": "Please try again or contact me directly via LinkedIn."
+        }
+    }
+}

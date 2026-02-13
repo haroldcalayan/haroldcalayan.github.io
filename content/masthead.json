@@ -1,0 +1,38 @@
+{
+  "badge": "Senior Android Developer",
+  "title": {
+    "main": "Building Scalable Android Experiences for ",
+    "highlight": "Global Brands"
+  },
+  "description": "12+ years of professional experience crafting high-performance, secure, and user-centric mobile applications using Kotlin and Jetpack Compose.",
+  "buttons": [
+    {
+      "text": "View Projects test if working",
+      "icon": "fas fa-arrow-right",
+      "link": "#portfolio",
+      "style": "primary"
+    },
+    {
+      "text": "Book a Strategy Call",
+      "icon": "",
+      "link": "#contact",
+      "style": "outline"
+    }
+  ],
+  "profileImage": "assets/img/harold_profile.png",
+  "profileAlt": "Harold - Senior Android Developer",
+  "stats": [
+    {
+      "value": 12,
+      "suffix": "+",
+      "label": "Years Exp.",
+      "position": "top-left"
+    },
+    {
+      "value": 20,
+      "suffix": "+",
+      "label": "Apps Shipped",
+      "position": "bottom-right"
+    }
+  ]
+}

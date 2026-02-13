@@ -1,0 +1,17 @@
+{
+    "label": "Trusted by industry leaders",
+    "companies": [
+        {
+            "name": "Philippine Airlines",
+            "logo": "assets/img/philippine_airline_no_bg.png"
+        },
+        {
+            "name": "Maya",
+            "logo": "assets/img/paymaya_no_bg.png"
+        },
+        {
+            "name": "Smart",
+            "logo": "assets/img/smart_no_bg.png"
+        }
+    ]
+}
