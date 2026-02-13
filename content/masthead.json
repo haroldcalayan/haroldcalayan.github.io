@@ -7,7 +7,7 @@
   "description": "12+ years of professional experience crafting high-performance, secure, and user-centric mobile applications using Kotlin and Jetpack Compose.",
   "buttons": [
     {
-      "text": "View Projects test if working",
+      "text": "View Projects",
       "icon": "fas fa-arrow-right",
       "link": "#portfolio",
       "style": "primary"
