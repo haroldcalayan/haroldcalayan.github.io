@@ -18,7 +18,7 @@
             "category": "Fintech & SDK",
             "description": "A secure, modular Payment SDK enabling third-party merchants to accept in-app payments seamlessly. Supports credit/debit cards, PayMaya wallet, and QR payments. Features a customizable UI kit, bank-grade encryption, and strict PCI-DSS compliance, empowering hundreds of partner apps to monetize effectively.",
             "techStack": "Kotlin, Payment Security, PCI-DSS, Encryption, SDK Design, API Integration",
-            "cardImage": "assets/img/portfolio/payMayaCard.png",
+            "cardImage": "assets/img/portfolio/paymayaCard.png",
             "hoverImage": "assets/img/portfolio/paymayaHoverCard.png",
             "bgColor": "#0d1117"
         },
