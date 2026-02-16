@@ -20,12 +20,10 @@
     height: 120px;
     max-width: 280px;
     transition: all 0.4s var(--ease-expo-out);
-    filter: grayscale(1) brightness(0.8) contrast(1.2);
     opacity: 0.5;
 }
 
 .trusted-logo-item:hover {
-    filter: grayscale(0) brightness(1) contrast(1);
     opacity: 1;
     transform: scale(1.1);
 }
