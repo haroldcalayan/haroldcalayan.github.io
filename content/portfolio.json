@@ -121,16 +121,6 @@
             "cardImage": "assets/img/portfolio/BBBCard.png",
             "hoverImage": "assets/img/portfolio/BBBHoverCard.png",
             "bgColor": "#1a2a32"
-        },
-        {
-            "id": "TEST",
-            "title": "TEST",
-            "category": "TEST",
-            "description": "TEST",
-            "techStack": "TEST",
-            "cardImage": "assets/img/portfolio/cake.png",
-            "hoverImage": "assets/img/portfolio/cake.png",
-            "bgColor": "#1a2a32"
         }
     ]
 }
