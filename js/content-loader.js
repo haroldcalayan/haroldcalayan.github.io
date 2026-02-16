@@ -1,6 +1,5 @@
 const ContentLoader = {
     async initAll() {
-        console.log('Initializing ContentLoader...');
         await Promise.all([
             this.loadMasthead(),
             this.loadTrustedBy(),
@@ -10,7 +9,6 @@ const ContentLoader = {
             this.loadExperience(),
             this.loadContact()
         ]);
-        console.log('All content loaded successfully.');
     },
 
     async fetchJSON(filename) {

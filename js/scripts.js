@@ -73,7 +73,6 @@ window.addEventListener('DOMContentLoaded', event => {
         const sections = document.querySelectorAll('section, header.masthead');
         const mainNavElement = document.querySelector('#mainNav');
 
-        console.log('Navbar color switcher initialized');
 
         if (mainNavElement && sections.length > 0) {
             const updateNavbarColor = () => {
