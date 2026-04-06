@@ -5,7 +5,7 @@
 }
 
 .testimonial-carousel .carousel-indicators [data-bs-target] {
-    width: 8px;
+    width: 100%;
     height: 8px;
     border-radius: 50%;
     background-color: var(--slate-600);

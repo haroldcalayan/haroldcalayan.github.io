@@ -1,5 +1,7 @@
 :root {
     /* Primary Palette */
+    --primary-400: #60a5fa;
+    --primary-500: #3b82f6;
     --primary-600: #2563eb;
     /* Indigo */
     --primary-700: #1d4ed8;
