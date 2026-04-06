@@ -124,6 +124,35 @@ const ContentLoader = {
                     </div>
                 `;
             }).join('');
+
+            // Setup pingpong scroll effect based on overflow
+            const wrapper = container.parentElement;
+            wrapper.classList.add('trusted-logos-wrapper');
+
+            const updatePingPong = () => {
+                const parentWidth = wrapper.offsetWidth;
+                const scrollWidth = container.scrollWidth;
+
+                // Only animate if the logos are wider than the container
+                if (scrollWidth > parentWidth) {
+                    container.classList.add('pingpong-animate');
+                    container.style.margin = '0';
+                    container.style.setProperty('--parent-width', `${parentWidth}px`);
+
+                    // Adjust animation duration based on overflow distance for consistent speed
+                    const distance = scrollWidth - parentWidth;
+                    const duration = Math.max(15, distance / 40); // Base duration, max speed 40px/s
+                    container.style.animationDuration = `${duration}s`;
+                } else {
+                    container.classList.remove('pingpong-animate');
+                    container.style.margin = '0 auto';
+                    container.style.transform = 'none';
+                }
+            };
+
+            // Wait for images to load before computing widths
+            setTimeout(updatePingPong, 500);
+            window.addEventListener('resize', updatePingPong);
         }
     },
 
@@ -230,13 +259,26 @@ const ContentLoader = {
         this.setText('portfolio-heading', data.heading);
         this.setText('portfolio-subheading', data.subheading);
 
+        // Load Categories/Filters
+        const filtersContainer = document.getElementById('portfolio-filters');
+        if (filtersContainer && data.categories) {
+            filtersContainer.innerHTML = data.categories.map((category) => {
+                const isActive = category === 'ALL' ? 'active' : '';
+                return `<button class="team-filter-btn ${isActive}" data-filter="${category}">${category}</button>`;
+            }).join('');
+        }
+
         const track = document.getElementById('portfolio-track');
         if (track && data.projects) {
             track.innerHTML = data.projects.map(project => `
-                <div class="portfolio-card-item"
-                    data-description="${project.description}"
-                    data-tech-stack="${project.techStack}"
-                    data-bg-color="${project.bgColor}">
+                <div class="portfolio-card-item show"
+                    data-id="${project.id}"
+                    data-service-category="${project.serviceCategory || ''}"
+                    data-description="${project.description.replace(/"/g, '&quot;')}"
+                    data-tech-stack="${project.techStack.toString().replace(/"/g, '&quot;')}"
+                    data-bg-color="${project.bgColor}"
+                    data-image-style="${project.imageStyle || 'cover'}"
+                    data-gallery='${project.gallery ? JSON.stringify(project.gallery).replace(/'/g, "&apos;") : ""}'>
                     <div class="card-image-wrapper">
                         <img class="card-image" src="${project.cardImage}" alt="${project.title}" /> 
                         <img class="card-image-hover" src="${project.hoverImage}" alt="${project.title} Hover" />
@@ -248,8 +290,43 @@ const ContentLoader = {
                 </div>
             `).join('');
 
+            // Add filter functionality
+            const filterBtns = document.querySelectorAll('#portfolio-filters .team-filter-btn');
+            const portfolioCards = document.querySelectorAll('.portfolio-card-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active from all
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active to clicked
+                    btn.classList.add('active');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    portfolioCards.forEach(card => {
+                        card.classList.remove('show');
+
+                        // Use a timeout to allow the exit animation if we add one, or just hide
+                        setTimeout(() => {
+                            if (filterValue === 'ALL' || card.getAttribute('data-service-category') === filterValue) {
+                                card.style.display = 'block';
+                                // Force reflow
+                                void card.offsetWidth;
+                                card.classList.add('show');
+                            } else {
+                                card.style.display = 'none';
+                            }
+
+                            // Re-calculate drag distances for the horizontal scroll if needed
+                            if (window.portfolioExpansionInstance) {
+                                window.portfolioExpansionInstance.refreshCards();
+                            }
+                        }, 50); // slight delay for visual effect
+                    });
+                });
+            });
+
             // Re-initialize portfolio interactions if needed
-            // Since elements are newly added, checking if we need to call any init function
             if (window.initializePortfolioExpansion) {
                 window.initializePortfolioExpansion();
             }
