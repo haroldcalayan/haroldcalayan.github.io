@@ -5,19 +5,19 @@
 }
 
 .testimonial-carousel .carousel-indicators [data-bs-target] {
-    width: 100%;
+    width: 8px;
     height: 8px;
     border-radius: 50%;
     background-color: var(--slate-600);
     border: none;
     opacity: 0.5;
     transition: all 0.3s var(--ease-expo-out);
-    margin: 0 5px;
+    margin: 0 6px;
 }
 
 .testimonial-carousel .carousel-indicators .active {
     width: 24px;
-    border-radius: 4px;
+    border-radius: 10px;
     background-color: var(--primary-600);
     opacity: 1;
 }
