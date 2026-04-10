@@ -48,15 +48,14 @@
             ]
         },
         {
-            "id": "smartnet",
-            "title": "Smartnet",
-            "category": "Free Internet",
+            "id": "cse",
+            "title": "CIVIL SERVICE REVIEWER",
+            "category": "Education",
             "serviceCategory": "Mobile App Development",
-            "description": "An innovative 'Free Internet' platform providing zero-rated access to social media and essential services. Utilized advanced VPN tunneling and background data management to safeguard users from unwanted charges. Featured a proprietary 'Net.Safe' technology, ensuring a worry-free online experience for prepaid subscribers.",
-            "techStack": "Android, VPNService, Traffic Management, Socket.IO, Background Services",
-            "cardImage": "assets/img/portfolio/smartnetCard.png",
-            "hoverImage": "assets/img/portfolio/smartnetHoverCard.png",
-            "bgColor": "#0f172a",
+            "description": "Civil Service Exam Reviewer is a comprehensive review app designed to help aspiring candidates prepare effectively for the Civil Service Exam (CSE). Covering both Sub-Professional and Professional levels, the app features a regularly updated question database, realistic practice tests, instant performance feedback, detailed analytics, and a helpful registration guide. With its user-friendly interface and expertly crafted review materials, it enables users to strengthen key areas, improve test-taking skills, and build confidence—making it a reliable companion for achieving success in the Civil Service Exam.",
+            "techStack": "Kotlin, Firebase, Room, Jetpack Compose, Google Ads, In-App Purchases",
+            "cardImage": "assets/img/portfolio/cseCard.png",
+            "hoverImage": "assets/img/portfolio/cseHoverCard.png",
             "gallery": [
                 "assets/img/portfolio/CSE-GALLERY/CSE/S1.png",
                 "assets/img/portfolio/CSE-GALLERY/CSE/S2.png",
@@ -66,18 +65,18 @@
                 "assets/img/portfolio/CSE-GALLERY/CSE/S6.png",
                 "assets/img/portfolio/CSE-GALLERY/CSE/S7.png",
                 "assets/img/portfolio/CSE-GALLERY/CSE/S8.png"
-            ]
+            ],
+            "bgColor": "#1e1b4b"
         },
         {
-            "id": "freenet",
-            "title": "Freenet",
-            "category": "Partner Access",
+            "id": "lto",
+            "title": "Ultimate LTO Exam Reviewer",
+            "category": "Education",
             "serviceCategory": "Mobile App Development",
-            "description": "A gamified free internet platform that rewards users with points and data packages for completing missions. Provided rewards-based access to top apps including Facebook and Twitter. Implemented sophisticated partner API integrations and data-saving mechanisms to bridge the digital divide.",
-            "techStack": "Android, Gamification, Rewards Engine, VPN, RESTful APIs, Analytics",
-            "cardImage": "assets/img/portfolio/freenetCard.png",
-            "hoverImage": "assets/img/portfolio/freenetHoverCard.png",
-            "bgColor": "#111827",
+            "description": "Ultimate LTO Exam Reviewer is a comprehensive review app designed to help aspiring candidates prepare effectively for the Land Transportation Office (LTO) Exam. Covering both theoretical and practical driving knowledge, the app features a regularly updated question database, realistic practice tests, instant performance feedback, detailed analytics, and helpful resources for license application and renewal. With its user-friendly interface and expertly crafted review materials, it enables users to strengthen key areas, improve test-taking skills, and build confidence—making it a reliable companion for achieving success in the LTO Exam.",
+            "techStack": "Kotlin, Firebase, Room, Jetpack Compose, Google Ads, In-App Purchases",
+            "cardImage": "assets/img/portfolio/LTOCard.png",
+            "hoverImage": "assets/img/portfolio/LTOHoverCard.png",
             "gallery": [
                 "assets/img/portfolio/LTO-GALLERY/LTO/1000016291.png",
                 "assets/img/portfolio/LTO-GALLERY/LTO/1000016293.png",
@@ -87,7 +86,8 @@
                 "assets/img/portfolio/LTO-GALLERY/LTO/1000016301.png",
                 "assets/img/portfolio/LTO-GALLERY/LTO/1000016303.png",
                 "assets/img/portfolio/LTO-GALLERY/LTO/1000016305.png"
-            ]
+            ],
+            "bgColor": "#2a1a32"
         },
         {
             "id": "chikka",
@@ -180,17 +180,16 @@
             ]
         },
         {
-            "id": "overstock",
-            "title": "Overstock",
-            "category": "E-commerce & Retail",
-            "serviceCategory": "Mobile App Development",
-            "description": "Home furnishings and lifestyle e-commerce app offering furniture, décor, jewelry, mattresses, bedding, and designer goods at discounted prices. Features easy browsing of thousands of products, exclusive app-only discounts, first-to-know notifications, quick secure checkout, and seamless cart synchronization between site and app for effortless shopping.",
-            "techStack": "Android, E-commerce, Push Notifications, Secure Payments, Cart Sync",
-            "cardImage": "assets/img/portfolio/overstockCard.png",
-            "hoverImage": "assets/img/portfolio/overstockHoverCard.png",
-            "bgColor": "#2e1a1a",
+            "id": "cms",
+            "title": "Clinic Management System",
+            "category": "Healthcare",
+            "serviceCategory": "Website Development",
+            "description": "A Clinic Management System (CMS) is a system designed to efficiently manage and streamline the daily operations of a clinic. It facilitates patient registration, appointment scheduling, medical record management, prescription handling, and basic administrative tasks. The system enhances operational efficiency, minimizes manual paperwork, ensures accurate and secure record-keeping, and improves the overall quality of patient care and service delivery.",
+            "techStack": "JavaScript, PHP, HTML, CSS, Bootstrap, MySQL, Appointment Scheduling",
+            "cardImage": "assets/img/portfolio/cmsCardAlt.png",
+            "hoverImage": "assets/img/portfolio/cmsHoverCardAlt.png",
             "gallery": [
-                "assets/img/portfolio/CMS-GALLERY/CMS/CMS1.png",
+                "assets/img/portfolio/CMS-GALLERY/CMS/CMS-1.png",
                 "assets/img/portfolio/CMS-GALLERY/CMS/CMS2.png",
                 "assets/img/portfolio/CMS-GALLERY/CMS/CMS3.png",
                 "assets/img/portfolio/CMS-GALLERY/CMS/CMS4.png",
@@ -198,19 +197,27 @@
                 "assets/img/portfolio/CMS-GALLERY/CMS/CMS6.png",
                 "assets/img/portfolio/CMS-GALLERY/CMS/CMS7.png",
                 "assets/img/portfolio/CMS-GALLERY/CMS/CMS8.png",
-                "assets/img/portfolio/CMS-GALLERY/CMS/CMS9.png"
-            ]
+                "assets/img/portfolio/CMS-GALLERY/CMS/CMS9.png",
+                "assets/img/portfolio/CMS-GALLERY/CMS/CMS10.png",
+                "assets/img/portfolio/CMS-GALLERY/CMS/CMS11.png",
+                "assets/img/portfolio/CMS-GALLERY/CMS/CMS12.png",
+                "assets/img/portfolio/CMS-GALLERY/CMS/CMS13.png",
+                "assets/img/portfolio/CMS-GALLERY/CMS/CMS14.png",
+                "assets/img/portfolio/CMS-GALLERY/CMS/CMS15.png",
+                "assets/img/portfolio/CMS-GALLERY/CMS/CMS16.png",
+                "assets/img/portfolio/CMS-GALLERY/CMS/CMS17.png"
+            ],
+            "bgColor": "#be185d"
         },
         {
-            "id": "mula",
-            "title": "Mula Mobile",
-            "category": "Business & Commerce",
+            "id": "mlbb",
+            "title": "MLBB Game Guide",
+            "category": "Gaming & Social",
             "serviceCategory": "Mobile App Development",
-            "description": "Free mobile business management app for selling digital goods like airtime and electricity. Functions as a complete till system with inventory management, stock ordering, sales tracking, and profit monitoring. Supports additional payment services including DStv channels. Designed to help businesses and individuals grow through effective mobile commerce.",
-            "techStack": "Android, POS System, Inventory Management, Payment Integration, Sales Analytics",
-            "cardImage": "assets/img/portfolio/mulaCard.png",
-            "hoverImage": "assets/img/portfolio/mulaHoverCard.png",
-            "bgColor": "#1a2e1a",
+            "description": "MLBB Game Guide is a comprehensive companion app designed to help players improve their gameplay and strategy in Mobile Legends: Bang Bang. It provides detailed hero information, item builds, emblems, battle spells, rankings, tier lists, and drafting strategies—all in one convenient platform. With organized and easy-to-navigate data, users can explore hero stats and roles, compare items, learn optimal emblem and spell usage, track the current meta, and even simulate team drafts to practice compositions and counters. Regularly updated for accuracy and relevance, the app offers a simple, user-friendly experience for players of all skill levels.",
+            "techStack": "Interactive UI, Lottie Animations, API Integration, Social Features, Real-time Stats",
+            "cardImage": "assets/img/portfolio/mlbbCard.png",
+            "hoverImage": "assets/img/portfolio/mlbbHoverCard.png",
             "gallery": [
                 "assets/img/portfolio/MLBB-GALLERY/MLBB/MLBB1.png",
                 "assets/img/portfolio/MLBB-GALLERY/MLBB/MLBB2.png",
@@ -220,7 +227,8 @@
                 "assets/img/portfolio/MLBB-GALLERY/MLBB/MLBB6.png",
                 "assets/img/portfolio/MLBB-GALLERY/MLBB/MLBB7.png",
                 "assets/img/portfolio/MLBB-GALLERY/MLBB/MLBB8.png"
-            ]
+            ],
+            "bgColor": "#2a1a32"
         },
         {
             "id": "bedbath",
@@ -235,6 +243,78 @@
             "gallery": [
                 "assets/img/portfolio/BBBCard.png"
             ]
+        },
+        {
+            "id": "lms",
+            "title": "Laundry Management System",
+            "category": "Business & Admin",
+            "serviceCategory": "Website Development",
+            "description": "A Laundry Management System (LMS) is a digital system used to manage laundry shop operations efficiently. It tracks customer orders, service types, pricing, pickup and delivery, payment transactions, and order status. The system helps organize workflow, reduce errors, monitor income, and improve customer service by providing accurate and real-time updates.",
+            "techStack": "Typescript, Laravel, React, Tailwind CSS, MySQL, Appointment Scheduling",
+            "cardImage": "assets/img/portfolio/lmsCard.png",
+            "hoverImage": "assets/img/portfolio/lmsHoverCardAlt.png",
+            "gallery": [
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS1.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS2.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS3.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS4.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS5.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS6.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS7.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS8.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS9.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS10.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS11.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS12.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS13.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS14.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS15.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS16.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS17.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS18.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS19.png",
+                "assets/img/portfolio/LMS -GALLERY/LMS/LMS20.png"
+            ],
+            "bgColor": "#4f46e5"
+        },
+        {
+            "id": "periodic-table",
+            "title": "Play To Learn: Periodic Table",
+            "category": "Education",
+            "serviceCategory": "Mobile App Development",
+            "description": "Play To Learn: Periodic Table is an engaging educational app designed to make learning chemistry interactive, enjoyable, and easy to understand. Featuring a fully interactive periodic table, users can tap on each element to explore detailed information such as atomic number, symbol, atomic weight, electron configuration, properties, history, uses, and orbital diagrams. The app also includes 3D atomic structure visualization to better understand electron arrangements, along with fun and educational quizzes to reinforce learning. With its intuitive interface and visually appealing design, it’s perfect for students, educators, and science enthusiasts who want to study at their own pace. This initial release marks the beginning of more exciting updates and features to come, making it a growing companion for anyone eager to explore the wonders of chemistry.",
+            "techStack": "Kotlin, Maps SDK, QR Scanning, Payment Gateway, Real-time Tracking, Firebase",
+            "cardImage": "assets/img/portfolio/ptCard.png",
+            "hoverImage": "assets/img/portfolio/ptHoverCard.png",
+            "gallery": [
+                "assets/img/portfolio/Periodic Table-GALLERY/Periodic Table/1000016271.png",
+                "assets/img/portfolio/Periodic Table-GALLERY/Periodic Table/1000016273.png",
+                "assets/img/portfolio/Periodic Table-GALLERY/Periodic Table/1000016281.png",
+                "assets/img/portfolio/Periodic Table-GALLERY/Periodic Table/1000016283.png",
+                "assets/img/portfolio/Periodic Table-GALLERY/Periodic Table/1000016285.png",
+                "assets/img/portfolio/Periodic Table-GALLERY/Periodic Table/1000016287.png",
+                "assets/img/portfolio/Periodic Table-GALLERY/Periodic Table/1000016289.png"
+            ],
+            "bgColor": "#ff6b00"
+        },
+        {
+            "id": "cpu-scheduling",
+            "title": "CPU Scheduling Solver",
+            "category": "Education",
+            "serviceCategory": "Mobile App Development",
+            "description": "The main function of this app is solving and graphing different CPU Scheduling algorithms. The values plot in a bar graph and it gives you the algorithm that computes the average waiting and turnaround time. CPU scheduling is a process which allows one process to use the CPU while the execution of another process is on hold (in waiting state) due to unavailability of any resource like I/O etc, thereby making full use of CPU. The aim of CPU scheduling is to make the system efficient, fast and fair.<br><br><b>Features:</b><ul><li>6 CPU Scheduling algorithms (FCFS, SRF, SPF, Round Robin, Priority Preemptive/Non-preemptive)</li><li>Sample value generation</li><li>Interactive bar graphs and computation results</li><li>Offline functionality</li></ul>",
+            "techStack": "Java/Kotlin, Android SDK, Graphing Library, Algorithms, UI/UX Design",
+            "cardImage": "assets/img/portfolio/cpu_card.png",
+            "hoverImage": "assets/img/portfolio/cpu_hover.png",
+            "gallery": [
+                "assets/img/portfolio/CPU scheduling/1.webp",
+                "assets/img/portfolio/CPU scheduling/2.webp",
+                "assets/img/portfolio/CPU scheduling/3.webp",
+                "assets/img/portfolio/CPU scheduling/4.webp",
+                "assets/img/portfolio/CPU scheduling/5.webp",
+                "assets/img/portfolio/CPU scheduling/6.webp"
+            ],
+            "bgColor": "#1e293b"
         }
     ]
 }
