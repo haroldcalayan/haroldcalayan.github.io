@@ -2,8 +2,72 @@
     "label": "Trusted by industry leaders",
     "companies": [
         {
-            "name": "Philippine Airlines",
-            "logo": "assets/img/philippine_airline_no_bg.png"
+            "name": "Accenture",
+            "logo": "assets/img/trusted-by/accenture.png"
+        },
+        {
+            "name": "BBB",
+            "logo": "assets/img/trusted-by/bbb.png"
+        },
+        {
+            "name": "Cloud Employee",
+            "logo": "assets/img/trusted-by/cloudemployee-removebg-preview.png"
+        },
+        {
+            "name": "Coinpass",
+            "logo": "assets/img/trusted-by/coinpass-removebg-preview.png"
+        },
+        {
+            "name": "Collabera",
+            "logo": "assets/img/trusted-by/collabera-removebg-preview.png"
+        },
+        {
+            "name": "Exelon",
+            "logo": "assets/img/trusted-by/exelon.png"
+        },
+        {
+            "name": "GCash",
+            "logo": "assets/img/trusted-by/gcash.png"
+        },
+        {
+            "name": "Modirum",
+            "logo": "assets/img/trusted-by/modirum-removebg-preview.png"
+        },
+        {
+            "name": "MyCWT",
+            "logo": "assets/img/trusted-by/myCWT.png"
+        },
+        {
+            "name": "Oanda",
+            "logo": "assets/img/trusted-by/oanda-removebg-preview.png"
+        },
+        {
+            "name": "Overstock",
+            "logo": "assets/img/trusted-by/overstock.png"
+        },
+        {
+            "name": "Quantrics",
+            "logo": "assets/img/trusted-by/quantrics-removebg-preview.png"
+        },
+        {
+            "name": "RipeConcepts",
+            "logo": "assets/img/trusted-by/ripeconcepts.webp"
+        },
+        {
+            "name": "STC",
+            "logo": "assets/img/trusted-by/stc.png"
+        },
+        {
+            "name": "Teko",
+            "logo": "assets/img/trusted-by/teko.png"
+        },
+        {
+            "name": "Voyager",
+            "logo": "assets/img/trusted-by/voyager-removebg-preview.png"
+        },
+        {
+            "name": "Yondu",
+            "logo": "assets/img/trusted-by/yondu.png"
         },
         {
             "name": "Maya",

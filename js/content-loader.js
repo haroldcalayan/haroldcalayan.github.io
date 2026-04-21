@@ -4,6 +4,7 @@ const ContentLoader = {
             this.loadMasthead(),
             this.loadTrustedBy(),
             this.loadAbout(),
+            this.loadAcademic(),
             this.loadPortfolio(),
             this.loadSkills(),
             this.loadExperience(),
@@ -120,39 +121,24 @@ const ContentLoader = {
                 const slug = company.name.toLowerCase().replace(/\s+/g, '-');
                 return `
                     <div class="trusted-logo-item logo-${slug}" title="${company.name}">
-                        <img src="${company.logo}" alt="${company.name}" class="trusted-logo-img" />
+                        <img src="${company.logo}" alt="${company.name}" class="trusted-logo-img" draggable="false" />
                     </div>
                 `;
             }).join('');
 
-            // Setup pingpong scroll effect based on overflow
-            const wrapper = container.parentElement;
-            wrapper.classList.add('trusted-logos-wrapper');
-
-            const updatePingPong = () => {
-                const parentWidth = wrapper.offsetWidth;
-                const scrollWidth = container.scrollWidth;
-
-                // Only animate if the logos are wider than the container
-                if (scrollWidth > parentWidth) {
-                    container.classList.add('pingpong-animate');
-                    container.style.margin = '0';
-                    container.style.setProperty('--parent-width', `${parentWidth}px`);
-
-                    // Adjust animation duration based on overflow distance for consistent speed
-                    const distance = scrollWidth - parentWidth;
-                    const duration = Math.max(15, distance / 40); // Base duration, max speed 40px/s
-                    container.style.animationDuration = `${duration}s`;
-                } else {
-                    container.classList.remove('pingpong-animate');
-                    container.style.margin = '0 auto';
-                    container.style.transform = 'none';
-                }
-            };
-
-            // Wait for images to load before computing widths
-            setTimeout(updatePingPong, 500);
-            window.addEventListener('resize', updatePingPong);
+            // Wrap container in a portfolio-scroller shell
+            if (!container.parentElement.classList.contains('scroller-shell')) {
+                const shell = document.createElement('div');
+                shell.className = 'portfolio-scroller w-100 scroller-shell';
+                shell.style.overflowX = 'auto';
+                shell.style.cursor = 'grab';
+                shell.style.paddingBottom = '20px';
+                container.parentNode.insertBefore(shell, container);
+                shell.appendChild(container);
+            }
+            container.style.margin = '0'; // align left so it scrolls naturally
+            container.classList.remove('trusted-logos-grid');
+            container.classList.add('portfolio-track');
         }
     },
 
@@ -173,9 +159,6 @@ const ContentLoader = {
             `).join('');
         }
 
-        // Check if there are stats in about.json that need to be mapped.
-        // The current HTML has static stats which seem to duplicate masthead stats but in a different layout.
-        // Mapping them based on index if available
         if (data.stats && data.stats.length >= 2) {
             const stat1 = data.stats[0];
             this.setText('about-stat-1-value', stat1.value + stat1.suffix);
@@ -407,6 +390,54 @@ const ContentLoader = {
                 </div>
             `).join('');
         }
+    },
+
+    async loadAcademic() {
+        const data = await this.fetchJSON('academic.json');
+        const section = document.getElementById('academic');
+        const container = document.getElementById('academic-items-container');
+
+        if (!data || !container) {
+            if (section) section.style.display = 'none';
+            return;
+        }
+
+        if (section) section.style.display = 'block';
+        this.setText('academic-heading', data.heading);
+        this.setText('academic-subheading', data.subheading);
+
+        container.classList.remove('row', 'g-4'); // Remove grid classes
+        container.innerHTML = `
+            <div class="portfolio-scroller w-100" style="overflow-x: auto; cursor: grab; padding-bottom: 20px;">
+                <div class="timeline-container w-100">
+                    <div class="timeline-line"></div>
+                    ${data.education.map((item, index) => {
+            const position = index % 2 === 0 ? 'up' : 'down';
+            // Extract start year for the timeline pin
+            const startYear = item.period.match(/\d{4}/)?.[0] || '';
+
+            return `
+                    <div class="timeline-item ${position}">
+                        <div class="timeline-card-wrapper">
+                            <div class="bento-card h-100 p-4 border border-slate-700 hover-lift text-center shadow-lg">
+                                <div class="d-flex flex-column align-items-center mb-3">
+                                    <div class="icon-box glass-panel p-3 rounded-circle mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                        <i class="${item.icon} text-neon fa-lg"></i>
+                                    </div>
+                                    <div class="small fw-bold text-slate-400 mb-1">${item.period}</div>
+                                    <h3 class="h6 fw-bold mb-0 text-white">${item.title}</h3>
+                                </div>
+                                <p class="text-slate-300 mb-1 small fw-medium">${item.institution || item.organization || ''}</p>
+                                <p class="small text-slate-500 mb-0" style="font-size: 0.75rem;">${item.location || ""}</p>
+                            </div>
+                        </div>
+                        <div class="timeline-node">
+                        </div>
+                    </div>`;
+        }).join('')}
+                </div>
+            </div>
+        `;
     },
 
     async loadContact() {

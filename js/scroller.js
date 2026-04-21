@@ -7,7 +7,9 @@
     let animationId = null;
     let isPaused = false;
     let direction = 1; // 1 for right, -1 for left
-    const scrollSpeed = 0.1; // Pixels per frame
+    const scrollSpeed = 0.5;
+    let lastScrollLeft = 0;
+    let stalledFrames = 0;
 
     function initScroller(scroller) {
         if (scroller.dataset.initialized) return;
@@ -18,15 +20,20 @@
 
         function step() {
             if (!isPaused && !isDown) {
+                const currentScroll = scroller.scrollLeft;
                 scroller.scrollLeft += scrollSpeed * direction;
 
-                const maxScroll = scroller.scrollWidth - scroller.clientWidth;
-
-                if (scroller.scrollLeft >= maxScroll - 1) {
-                    direction = -1;
-                } else if (scroller.scrollLeft <= 1) {
-                    direction = 1;
+                // Wall Detection: If we didn't move after scrolling, flip direction
+                if (Math.abs(scroller.scrollLeft - lastScrollLeft) < 0.1) {
+                    stalledFrames++;
+                    if (stalledFrames > 2) { // Fast flip
+                        direction *= -1;
+                        stalledFrames = 0;
+                    }
+                } else {
+                    stalledFrames = 0;
                 }
+                lastScrollLeft = scroller.scrollLeft;
             }
             animationId = requestAnimationFrame(step);
         }
@@ -50,7 +57,9 @@
 
     document.addEventListener('mousedown', (e) => {
         const scroller = e.target.closest('.portfolio-scroller');
-        if (!scroller) return;
+        if (!scroller || scroller.dataset.noDrag === "true") return;
+
+        e.preventDefault();
 
         isDown = true;
         isPaused = true;
@@ -83,7 +92,7 @@
         if (!isDown || !activeScroller) return;
 
         const x = e.pageX - activeScroller.offsetLeft;
-        const walk = (x - startX) * 0.1; // Scroll speed
+        const walk = (x - startX) * 1.5;
 
         if (Math.abs(walk) > 0.1) {
             isDragging = true;
@@ -95,7 +104,6 @@
         }
     });
 
-    // Prevent clicks on portfolio items if we were dragging
     document.addEventListener('click', (e) => {
         if (isDragging) {
             const scroller = e.target.closest('.portfolio-scroller');
