@@ -75,6 +75,7 @@ const ContentLoader = {
         if (profileImg) {
             profileImg.src = data.profileImage;
             profileImg.alt = data.profileAlt;
+            profileImg.draggable = false;
         }
 
         // Stats
