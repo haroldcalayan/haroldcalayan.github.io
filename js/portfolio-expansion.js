@@ -252,6 +252,7 @@ class PortfolioExpansion {
             const el = document.createElement(isVideo ? 'video' : 'img');
             el.src = src;
             el.className = `portfolio-slide ${isFirst ? 'active' : ''}`;
+            el.draggable = false;
             if (isVideo) {
                 // Removing controls entirely to act like a GIF
                 el.muted = true;

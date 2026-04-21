@@ -6,7 +6,8 @@
     --shadow-squish: 0 5px 15px rgba(37, 99, 235, 0.2);
 }
 
-#masthead-profile-img {
+#masthead-profile-img,
+.portfolio-expanded-view img {
     user-drag: none;
     -webkit-user-drag: none;
 }
