@@ -43,6 +43,20 @@
     max-height: 55%;
 }
 
+.logo-oanda .trusted-logo-img {
+    max-width: 100%;
+    transform: scale(2);
+    /* Make it bigger without affecting others */
+}
+
+.logo-overstock .trusted-logo-img {
+    transform: scale(2);
+}
+
+.logo-cloud-employee .trusted-logo-img {
+    transform: scale(1.5);
+}
+
 .trusted-logo-item:hover .trusted-logo-img {
     opacity: 1;
     filter: brightness(0) invert(1);
