@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { file: 'masthead.html', containerId: 'masthead-container' },
         { file: 'trusted-by.html', containerId: 'trusted-by-container' },
         { file: 'about.html', containerId: 'about-container' },
+        { file: 'academic.html', containerId: 'academic-container' },
         { file: 'experience.html', containerId: 'process-container' },
         { file: 'skills.html', containerId: 'expertise-container' },
         { file: 'portfolio.html', containerId: 'portfolio-container' },

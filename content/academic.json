@@ -1,0 +1,25 @@
+{
+    "heading": "Academic Background",
+    "subheading": "Educational history and early professional milestones that shaped my engineering journey.",
+    "education": [
+        {
+            "period": "June 2008 - April 2013",
+            "title": "Bachelor of Science in Computer Engineering",
+            "institution": "Polytechnic University of the Philippines",
+            "location": "Mabini Campus, Sta. Mesa Manila, Philippines",
+            "icon": "fas fa-graduation-cap"
+        },
+        {
+            "period": "September 2012 - April 2013",
+            "title": "Microsoft Student Partner",
+            "organization": "Microsoft Philippines",
+            "icon": "fab fa-microsoft"
+        },
+        {
+            "period": "June 2012 - April 2013",
+            "title": "Smart SWEEP Scholar",
+            "organization": "Smart Wireless Engineering Education Program",
+            "icon": "fas fa-award"
+        }
+    ]
+}
