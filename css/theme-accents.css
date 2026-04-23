@@ -197,6 +197,9 @@
     .timeline-container {
         flex-direction: column;
         align-items: flex-start;
+        min-width: 100% !important;
+        min-height: auto !important;
+        padding: 50px 20px !important;
     }
 
     .timeline-line {

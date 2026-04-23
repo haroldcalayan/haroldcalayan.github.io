@@ -409,7 +409,7 @@ const ContentLoader = {
 
         container.classList.remove('row', 'g-4'); // Remove grid classes
         container.innerHTML = `
-            <div class="portfolio-scroller w-100" style="overflow-x: auto; cursor: grab; padding-bottom: 20px;">
+            <!-- <div class="portfolio-scroller w-100" style="overflow-x: auto; cursor: grab; padding-bottom: 20px;"> -->
                 <div class="timeline-container w-100">
                     <div class="timeline-line"></div>
                     ${data.education.map((item, index) => {
@@ -437,7 +437,7 @@ const ContentLoader = {
                     </div>`;
         }).join('')}
                 </div>
-            </div>
+            <!-- </div> -->
         `;
     },
 
