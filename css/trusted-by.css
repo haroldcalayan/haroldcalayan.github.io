@@ -6,6 +6,14 @@
     /* Prevent horizontal scrollbars on body */
 }
 
+/* Ensure the track starts from the left and doesn't center itself */
+.trusted-section .portfolio-track {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    padding-left: 2rem !important;
+    /* Give it some breathing room on the left */
+}
+
 
 .portfolio-scroller:hover .portfolio-track {
     animation-play-state: paused;
@@ -72,5 +80,10 @@
         height: 60px;
         width: 120px;
         max-width: 140px;
+    }
+
+    /* Override styles.css min-height which is too large for these small logos */
+    .trusted-section .portfolio-scroller {
+        min-height: 120px !important;
     }
 }
