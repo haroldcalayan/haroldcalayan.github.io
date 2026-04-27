@@ -1,0 +1,131 @@
+/* Academic & Education Section */
+#academic {
+    padding: 8rem 0;
+    background-color: var(--slate-900);
+}
+
+/* Timeline Layout */
+.timeline-container {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    height: 900px;
+    /* Fixed height for unambiguous centering */
+    padding: 0 5vw;
+    /* Breath room at edges */
+}
+
+
+
+.timeline-line {
+    position: absolute;
+    top: 450px;
+    /* Exact center of 900px */
+    left: 0;
+    width: 100%;
+    min-width: 1200px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--primary-400), var(--primary-400), transparent);
+    z-index: 0;
+    transform: translateY(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    flex: 0 0 450px;
+    padding: 0 40px;
+    z-index: 1;
+    height: 900px;
+    /* Match container height */
+}
+
+.timeline-card-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 80px);
+    z-index: 5;
+}
+
+.timeline-item.up .timeline-card-wrapper {
+    bottom: calc(900px - 390px);
+    /* Position above center (450px - 60px) */
+}
+
+.timeline-item.down .timeline-card-wrapper {
+    top: 510px;
+    /* Position below center (450px + 60px) */
+}
+
+.timeline-node {
+    position: absolute;
+    top: 450px;
+    /* Match line exactly */
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border: 5px solid var(--primary-600);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 25px rgba(11, 92, 255, 0.5);
+    z-index: 10;
+}
+
+.timeline-node::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background: rgba(11, 92, 255, 0.1);
+    border-radius: 50%;
+    animation: ripple 2s infinite;
+}
+
+@keyframes ripple {
+    0% {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .timeline-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 2rem;
+        min-height: auto;
+    }
+
+    .timeline-line {
+        width: 2px;
+        height: 100%;
+        left: 20px;
+        top: 0;
+    }
+
+    .timeline-item {
+        flex: 0 0 auto;
+        width: 100%;
+        margin: 1.5rem 0;
+        padding-left: 3rem;
+    }
+
+    .timeline-item.up .timeline-card-wrapper,
+    .timeline-item.down .timeline-card-wrapper {
+        margin: 0;
+    }
+
+    .timeline-node {
+        left: 20px;
+    }
+}
