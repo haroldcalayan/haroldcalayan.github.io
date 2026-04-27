@@ -1,0 +1,102 @@
+/* Utility Classes - Zoom Light Theme */
+
+/* Backgrounds */
+.bg-slate-900 {
+    background-color: var(--slate-900) !important;
+}
+
+.bg-slate-800 {
+    background-color: var(--slate-800) !important;
+}
+
+.bg-slate-50 {
+    background-color: var(--slate-50) !important;
+}
+
+.bg-primary-600 {
+    background-color: var(--primary-600) !important;
+}
+
+.bg-primary-50 {
+    background-color: var(--primary-50) !important;
+}
+
+.bg-zoom-navy {
+    background-color: var(--zoom-navy) !important;
+}
+
+.text-slate-200 {
+    color: var(--slate-200) !important;
+}
+
+.text-slate-100 {
+    color: var(--slate-100) !important;
+}
+
+.text-slate-900 {
+    color: var(--slate-900) !important;
+}
+
+.text-slate-800 {
+    color: var(--slate-800) !important;
+}
+
+.text-slate-700 {
+    color: var(--slate-700) !important;
+}
+
+.text-slate-600 {
+    color: var(--slate-600) !important;
+}
+
+.text-slate-500 {
+    color: var(--slate-500) !important;
+}
+
+.text-slate-400 {
+    color: var(--slate-400) !important;
+}
+
+.text-slate-300 {
+    color: var(--slate-300) !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.text-primary-600 {
+    color: var(--primary-600) !important;
+}
+
+/* Borders */
+.border-slate-100 {
+    border-color: var(--slate-100) !important;
+}
+
+.border-slate-200 {
+    border-color: var(--slate-200) !important;
+}
+
+.border-slate-300 {
+    border-color: var(--slate-300) !important;
+}
+
+.border-slate-700 {
+    border-color: var(--slate-200) !important;
+}
+
+/* Remap dark to light border */
+
+/* Shadows */
+.shadow-premium {
+    box-shadow: var(--shadow-lg) !important;
+}
+
+/* Display */
+.d-glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}

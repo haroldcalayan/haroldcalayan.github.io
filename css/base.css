@@ -1,0 +1,190 @@
+/* Base Styles & Resets */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--slate-300);
+    line-height: 1.6;
+    background-color: var(--slate-900);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: none !important;
+    outline: none !important;
+}
+
+/* Typography Defaults */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--slate-700);
+    letter-spacing: -0.025em;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+a {
+    transition: var(--transition-fast);
+    text-decoration: none;
+    color: var(--primary-600);
+}
+
+a:hover {
+    color: var(--primary-700);
+}
+
+/* Global Utilities */
+.text-gradient {
+    background: linear-gradient(to right, var(--primary-600), var(--info));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.premium-heading {
+    position: relative;
+    display: inline-block;
+}
+
+/* Global Scrollbar Management - Invisible but functional */
+* {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+/* Global Animation Framework */
+.reveal-fade-in,
+.reveal-slide-up,
+.reveal-slide-left,
+.reveal-slide-right,
+.reveal-scale-up,
+.reveal-premium-up {
+    opacity: 0;
+    filter: blur(8px);
+    transition:
+        opacity var(--transition-slow),
+        transform var(--transition-slow),
+        filter var(--transition-slow);
+    will-change: transform, opacity, filter;
+}
+
+.reveal-fade-in.visible {
+    opacity: 1;
+    filter: blur(0);
+}
+
+.reveal-slide-up {
+    transform: translateY(40px);
+}
+
+.reveal-slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+.reveal-premium-up {
+    transform: translateY(60px) scale(0.98);
+}
+
+.reveal-premium-up.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+}
+
+.reveal-slide-left {
+    transform: translateX(-40px);
+}
+
+.reveal-slide-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+.reveal-slide-right {
+    transform: translateX(40px);
+}
+
+.reveal-slide-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+.reveal-scale-up {
+    transform: scale(0.92);
+}
+
+.reveal-scale-up.visible {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+}
+
+/* Staggered Animations */
+.reveal-staggered>*,
+.reveal-staggered-premium>* {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(20px);
+    transition:
+        opacity 0.8s var(--ease-expo-out),
+        transform 0.8s var(--ease-expo-out),
+        filter 0.8s var(--ease-expo-out);
+}
+
+.reveal-staggered.visible>*,
+.reveal-staggered-premium.visible>* {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+/* Floating Animations */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+    animation: float 6s ease-in-out infinite 2s;
+}

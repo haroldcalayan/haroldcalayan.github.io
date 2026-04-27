@@ -1,0 +1,111 @@
+/* Reusable Premium Components */
+
+/* Button System */
+.btn-professional {
+    padding: var(--space-3) var(--space-6);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: var(--transition-fast);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-professional.btn-professional-primary {
+    background-color: var(--primary-600) !important;
+    color: white !important;
+}
+
+.btn-professional-primary:hover:not(.disabled) {
+    background-color: var(--primary-700);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+}
+
+.btn-professional-outline {
+    background-color: transparent;
+    border: 1px solid var(--primary-600);
+    color: var(--primary-600) !important;
+}
+
+.btn-professional-outline:hover:not(.disabled) {
+    border-color: var(--primary-600);
+    background-color: var(--primary-50);
+    transform: translateY(-2px);
+}
+
+/* Bento Card System */
+.bento-card {
+    background: var(--slate-50);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: var(--transition-normal);
+    box-shadow: var(--shadow-sm);
+}
+
+.bento-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(11, 92, 255, 0.1);
+}
+
+/* Glass Panels */
+.glass-panel,
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(11, 92, 255, 0.15);
+    /* Tinted border for visibility */
+    border-radius: 1rem;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Icon Box */
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    transition: var(--transition-normal);
+}
+
+/* Badges */
+.badge-premium {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Filter Buttons (Shared) */
+.team-filter-btn {
+    padding: 0.65rem 1.5rem;
+    border-radius: 2rem;
+    background: var(--slate-50);
+    border: 1px solid var(--primary-200);
+    color: var(--primary-600) !important;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: var(--transition-fast);
+    cursor: pointer;
+    margin: 0.25rem;
+}
+
+.team-filter-btn:hover {
+    background: var(--primary-50);
+    border-color: var(--primary-600);
+}
+
+.team-filter-btn.active {
+    background: var(--primary-600);
+    color: white !important;
+    border-color: var(--primary-600);
+    box-shadow: 0 8px 16px rgba(11, 92, 255, 0.2);
+}
