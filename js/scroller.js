@@ -1,6 +1,7 @@
 (function () {
     // Global dragging state (only one can be dragged at a time)
     let isDown = false;
+    let isPaused = false;
     let startX;
     let scrollLeft;
     let isDragging = false;
@@ -25,8 +26,9 @@
         function step() {
             // Check if this specific scroller is NOT being manually interacted with
             const isBeingDragged = (isDown && activeScroller === scroller);
+            const noAuto = scroller.dataset.noAuto === "true";
 
-            if (!isInstancePaused && !isBeingDragged) {
+            if (!isInstancePaused && !isBeingDragged && !noAuto) {
                 scroller.scrollLeft += scrollSpeed * direction;
 
                 // Wall Detection: If we didn't move after scrolling, flip direction

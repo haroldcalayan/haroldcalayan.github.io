@@ -63,7 +63,7 @@ const ContentLoader = {
                 const isPrimary = btn.style === 'primary';
                 const btnClass = isPrimary
                     ? 'btn btn-professional btn-professional-primary btn-lg'
-                    : 'btn btn-professional btn-professional-outline btn-lg text-white border-white';
+                    : 'btn btn-professional btn-professional-outline btn-lg';
                 const icon = btn.icon ? `<i class="${btn.icon} ms-2"></i>` : '';
                 return `<a class="${btnClass}" href="${btn.link}">${btn.text}${icon}</a>`;
             }).join('');
@@ -336,7 +336,7 @@ const ContentLoader = {
                     <div class="card h-100 p-4 hover-lift glass-card">
                         <div class="d-flex align-items-center mb-3">
                             <i class="${pillar.icon} fa-lg text-${pillar.iconColor} me-3"></i>
-                            <h3 class="h4 fw-bold mb-0 text-white">${pillar.title}</h3>
+                            <h3 class="h4 fw-bold mb-0 text-slate-700">${pillar.title}</h3>
                         </div>
                         <p class="text-slate-400 mb-0">
                             ${pillar.description}
@@ -409,13 +409,11 @@ const ContentLoader = {
 
         container.classList.remove('row', 'g-4'); // Remove grid classes
         container.innerHTML = `
-            <!-- <div class="portfolio-scroller w-100" style="overflow-x: auto; cursor: grab; padding-bottom: 20px;"> -->
+            <div class="portfolio-scroller w-100" data-no-auto="true" style="overflow-x: auto; cursor: grab; padding-bottom: 20px;">
                 <div class="timeline-container w-100">
                     <div class="timeline-line"></div>
                     ${data.education.map((item, index) => {
             const position = index % 2 === 0 ? 'up' : 'down';
-            // Extract start year for the timeline pin
-            const startYear = item.period.match(/\d{4}/)?.[0] || '';
 
             return `
                     <div class="timeline-item ${position}">
@@ -423,10 +421,10 @@ const ContentLoader = {
                             <div class="bento-card h-100 p-4 border border-slate-700 hover-lift text-center shadow-lg">
                                 <div class="d-flex flex-column align-items-center mb-3">
                                     <div class="icon-box glass-panel p-3 rounded-circle mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                                        <i class="${item.icon} text-neon fa-lg"></i>
+                                        <i class="${item.icon} text-primary-600 fa-lg"></i>
                                     </div>
                                     <div class="small fw-bold text-slate-400 mb-1">${item.period}</div>
-                                    <h3 class="h6 fw-bold mb-0 text-white">${item.title}</h3>
+                                    <h3 class="h6 fw-bold mb-0 text-slate-700">${item.title}</h3>
                                 </div>
                                 <p class="text-slate-300 mb-1 small fw-medium">${item.institution || item.organization || ''}</p>
                                 <p class="small text-slate-500 mb-0" style="font-size: 0.75rem;">${item.location || ""}</p>
@@ -437,7 +435,7 @@ const ContentLoader = {
                     </div>`;
         }).join('')}
                 </div>
-            <!-- </div> -->
+            </div>
         `;
     },
 
