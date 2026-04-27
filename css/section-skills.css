@@ -1,0 +1,54 @@
+/* Skills & Expertise Section */
+#expertise {
+    padding: 8rem 0;
+    background-color: var(--slate-900);
+}
+
+.skill-pillar-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    transition: var(--transition-normal);
+}
+
+.glass-card:hover .skill-pillar-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Tech Stack Badges Custom Scroll */
+#skills-tech-list {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Skill Item Icon Overrides (from skill-img.css) */
+.skill-item:hover i,
+.skill-item:hover svg {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px rgba(11, 92, 255, 0.2));
+}
+
+.fa-html5 {
+    color: #E34F26 !important;
+}
+
+.fa-css3-alt {
+    color: #1572B6 !important;
+}
+
+.fa-js {
+    color: #F7DF1E !important;
+}
+
+.fa-bootstrap {
+    color: #7952B3 !important;
+}
+
+.fa-react {
+    color: #61DAFB !important;
+}
+
+.fa-node-js {
+    color: #339933 !important;
+}

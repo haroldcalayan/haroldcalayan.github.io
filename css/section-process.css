@@ -1,0 +1,45 @@
+/* Experience / Working Process Section */
+#process {
+    padding: 8rem 0;
+    background-color: var(--slate-800);
+}
+
+.process-step {
+    padding: 2.5rem;
+    height: 100%;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 1.5rem;
+    transition: var(--transition-normal);
+    box-shadow: var(--shadow-sm);
+}
+
+.process-step:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-600);
+}
+
+.process-step-number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    opacity: 0.15;
+    background: linear-gradient(to bottom, var(--primary-600), transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.process-step h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--slate-700);
+}
+
+.process-step p {
+    font-size: 0.95rem;
+    color: var(--slate-400);
+    margin-bottom: 0;
+}

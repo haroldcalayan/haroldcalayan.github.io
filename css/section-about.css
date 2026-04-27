@@ -1,0 +1,48 @@
+/* About Section Styles */
+#about {
+    padding: 8rem 0;
+    background-color: var(--slate-900);
+}
+
+#about-heading {
+    margin-bottom: 2rem;
+}
+
+#about-description {
+    color: var(--slate-400);
+    margin-bottom: 2.5rem;
+}
+
+#about-highlights li {
+    font-weight: 500;
+    color: var(--slate-700);
+}
+
+#about-highlights i {
+    font-size: 1.25rem;
+}
+
+/* Testimonial Carousel in About */
+.testimonial-carousel .carousel-inner {
+    padding-bottom: 3rem;
+}
+
+.testimonial-carousel .carousel-indicators {
+    bottom: 0;
+}
+
+.testimonial-carousel .carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--slate-300);
+}
+
+.testimonial-carousel .carousel-indicators .active {
+    background-color: var(--primary-600);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: scale(1.2);
+    /* Make it slightly larger when active */
+}
