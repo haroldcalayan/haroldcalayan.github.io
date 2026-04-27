@@ -99,33 +99,72 @@
 }
 
 @media (max-width: 991.98px) {
+    #academic {
+        padding: 5rem 0;
+    }
+
     .timeline-container {
+        height: auto !important;
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 2rem;
+        padding: 0 1.5rem;
         min-height: auto;
+        overflow: visible;
+    }
+
+    /* Standardize scroller for vertical use */
+    .portfolio-scroller {
+        overflow-x: visible !important;
+        cursor: default !important;
+    }
+
+    .academic-items-container {
+        display: block !important;
+        min-width: 100% !important;
+        height: auto !important;
     }
 
     .timeline-line {
-        width: 2px;
+        display: block;
+        width: 3px;
         height: 100%;
+        min-width: 2px;
         left: 20px;
         top: 0;
+        transform: none;
+        background: var(--primary-200);
     }
 
     .timeline-item {
         flex: 0 0 auto;
         width: 100%;
-        margin: 1.5rem 0;
-        padding-left: 3rem;
+        height: auto !important;
+        margin: 0;
+        padding: 2.5rem 0 2.5rem 60px;
+        position: relative;
+    }
+
+    .timeline-card-wrapper {
+        position: relative !important;
+        left: 0 !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        transform: none !important;
+        width: 100%;
+        margin: 0;
     }
 
     .timeline-item.up .timeline-card-wrapper,
     .timeline-item.down .timeline-card-wrapper {
-        margin: 0;
+        position: relative !important;
+        top: auto !important;
+        bottom: auto !important;
     }
 
     .timeline-node {
         left: 20px;
+        top: 40px;
+        /* Align with top of item space */
+        transform: translate(-50%, 0);
     }
 }
