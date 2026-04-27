@@ -1,0 +1,74 @@
+/* Contact Section Styles */
+#contact {
+    padding: 8rem 0;
+    background-color: var(--slate-900);
+}
+
+.contact-card {
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.form-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--slate-400);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.form-control {
+    padding: 1rem 1.25rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--slate-200);
+    background: white;
+    color: var(--slate-700);
+    transition: var(--transition-fast);
+}
+
+.form-control:focus {
+    border-color: var(--primary-600);
+    box-shadow: 0 0 0 4px rgba(11, 92, 255, 0.1);
+    outline: none;
+}
+
+/* Calendar Card */
+.calendar-card {
+    background: var(--primary-50);
+    border: 1px solid var(--primary-100);
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+.calendar-icon-box {
+    background: var(--primary-600);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Social Links in Contact */
+.contact-socials a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--slate-50);
+    color: var(--slate-400);
+    transition: var(--transition-fast);
+}
+
+.contact-socials a:hover {
+    background: var(--primary-600);
+    color: white;
+    transform: translateY(-3px);
+}
