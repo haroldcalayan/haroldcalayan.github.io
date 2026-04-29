@@ -7,7 +7,7 @@
 }
 
 .trusted-logo-item {
-    padding: 0 2rem;
+    padding: 1.5rem 2.5rem; /* Increased padding for hover scale space */
     opacity: 0.5;
     filter: grayscale(100%);
     transition: var(--transition-normal);
@@ -23,6 +23,11 @@
     max-height: 40px;
     width: auto;
     object-fit: contain;
+}
+
+.trusted-section .portfolio-track {
+    align-items: center;
+    padding: 1.5rem 0;
 }
 
 /* Scroller Fixes for Logos */
