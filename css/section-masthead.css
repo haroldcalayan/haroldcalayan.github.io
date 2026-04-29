@@ -92,7 +92,7 @@ header.masthead .lead {
 
 @media (max-width: 991.98px) {
     header.masthead {
-        padding-top: 6rem;
+        padding-top: 10rem;
         padding-bottom: 4rem;
         text-align: center;
     }
@@ -102,19 +102,30 @@ header.masthead .lead {
         margin-right: auto;
     }
 
+    header.masthead .row {
+        flex-direction: column-reverse;
+    }
+
     .hero-image-wrapper {
-        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 
     .stat-card-floating {
-        position: relative;
-        left: 0 !important;
-        right: 0 !important;
-        top: 0 !important;
-        bottom: 0 !important;
-        margin: 1rem auto;
-        display: inline-flex;
+        position: absolute !important;
+        z-index: 10;
         transform: none !important;
-        animation: none !important;
+        animation: float 6s ease-in-out infinite !important;
+    }
+
+    .stat-card-tl {
+        top: 1.5rem !important;
+        left: 0 !important;
+        transform: translate(-25%, 0) !important;
+    }
+
+    .stat-card-br {
+        bottom: 2rem !important;
+        right: 0 !important;
+        transform: translate(25%, 0) !important;
     }
 }
