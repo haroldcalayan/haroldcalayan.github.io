@@ -112,8 +112,8 @@
         overflow: visible;
     }
 
-    /* Standardize scroller for vertical use */
-    .portfolio-scroller {
+    /* Standardize scroller for vertical use in Academic section */
+    #academic .portfolio-scroller {
         overflow-x: visible !important;
         cursor: default !important;
     }

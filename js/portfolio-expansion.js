@@ -189,6 +189,15 @@ class PortfolioExpansion {
             // Apply drag
             this.scrollContainer.scrollLeft -= walk;
         });
+
+        // Touch events for mobile interaction
+        this.scrollContainer.addEventListener('touchstart', () => {
+            this.isDragging = true;
+        }, { passive: true });
+
+        this.scrollContainer.addEventListener('touchend', () => {
+            this.isDragging = false;
+        }, { passive: true });
     }
 
     updateVisuals() {

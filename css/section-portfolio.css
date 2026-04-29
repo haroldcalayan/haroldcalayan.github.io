@@ -29,6 +29,7 @@
     overflow-x: auto;
     overflow-y: hidden;
     padding: 50px 0;
+    touch-action: auto;
     -webkit-overflow-scrolling: touch;
     cursor: grab;
 }
@@ -381,11 +382,11 @@
 /* Right Side - Details Sidebar */
 .portfolio-expanded-details {
     flex: 1;
-    padding: 5% 8% 10% 0;
+    padding: 8rem 8% 8rem 0;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s var(--portfolio-ease) 0.4s, transform 0.8s var(--portfolio-ease) 0.4s;

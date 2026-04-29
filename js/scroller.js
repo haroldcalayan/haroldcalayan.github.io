@@ -112,6 +112,19 @@
         }
     });
 
+    document.addEventListener('touchstart', (e) => {
+        const scroller = e.target.closest('.portfolio-scroller');
+        if (scroller) {
+            isPaused = true;
+            activeScroller = scroller;
+        }
+    }, { passive: true });
+
+    document.addEventListener('touchend', () => {
+        isPaused = false;
+        activeScroller = null;
+    }, { passive: true });
+
     document.addEventListener('click', (e) => {
         if (isDragging) {
             const scroller = e.target.closest('.portfolio-scroller');
