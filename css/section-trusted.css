@@ -4,10 +4,16 @@
     background-color: var(--slate-900);
     border-top: 1px solid var(--slate-100);
     border-bottom: 1px solid var(--slate-100);
+    overflow-x: hidden;
 }
 
 .trusted-logo-item {
-    padding: 1.5rem 2.5rem; /* Increased padding for hover scale space */
+    width: 200px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
     opacity: 0.5;
     filter: grayscale(100%);
     transition: var(--transition-normal);
@@ -20,9 +26,20 @@
 }
 
 .trusted-logo-img {
-    max-height: 40px;
+    height: 50px;
+    max-width: 170px;
     width: auto;
     object-fit: contain;
+}
+
+/* Compensate for logos with excessive whitespace in source files */
+.trusted-logo-img[alt="Oanda"],
+.trusted-logo-img[alt="Cloud Employee"] {
+    transform: scale(2.2);
+}
+
+.trusted-logo-img[alt="Quantrics"] {
+    transform: scale(1.8);
 }
 
 .trusted-section .portfolio-track {
@@ -34,4 +51,7 @@
 .scroller-shell {
     mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    touch-action: auto;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
 }
